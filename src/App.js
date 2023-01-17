@@ -1,25 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-function App() {
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+import Main from './pages/Main'
+import StructuredCabling from './pages/StructuredCabling'
+import SomeMeasurement from './pages/SomeMeasurement'
+import FiberWelding from './pages/FiberWelding'
+import PriceList from './pages/PriceList'
+import About from './pages/About'
+import Contacts from './pages/Contacts'
+
+
+import "materialize-css";
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/main" element={<Main />} />
+        <Route path="/structuredcabling" element={<StructuredCabling />} />
+        <Route path="/somemeasurement" element={<SomeMeasurement />} />
+        <Route path="/fiberwelding" element={<FiberWelding />} />
+        <Route path="/pricelist" element={<PriceList />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contacts" element={<Contacts />} />
+      </Routes>
+      <Footer />
+    </Router>
   );
-}
+};
 
 export default App;
