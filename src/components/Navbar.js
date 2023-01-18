@@ -1,40 +1,44 @@
 import React from "react";
-import {Link} from 'react-router-dom' 
+import { Link } from "react-router-dom";
 
-const Navbar = () => {
+import "materialize-css";
+import { Navbar, Icon } from "react-materialize";
+
+const NavBar = () => {
   return (
     <>
-      <nav className="light-blue lighten-1" role="navigation">
-        <div className="nav-wrapper container">
-          <Link to="/main" id="logo-container" className="brand-logo">
-          <img width="77" src="images/logo.png" />
+      <Navbar
+        className="light-blue lighten-1"
+        alignLinks="right"
+        brand={
+          <Link to="/main" className="brand-logo">
+            Logo
           </Link>
-          <ul className="right hide-on-med-and-down">
-              <li><Link to="/main">Main</Link></li>
-              <li><Link to="/structuredcabling">Structured Cabling</Link></li>
-              <li><Link to="/somemeasurement">Some Measurement</Link></li>
-              <li><Link to="/fiberwelding">FiberWelding</Link></li>
-              <li><Link to="/pricelist">PriceList</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contacts">Contacts</Link></li>
-                      </ul>
-
-          <ul id="nav-mobile" className="sidenav">
-              <li><Link to="/main">Main</Link></li>
-              <li><Link to="/structuredcabling">Structured Cabling</Link></li>
-              <li><Link to="/somemeasurement">Some Measurement</Link></li>
-              <li><Link to="/fiberwelding">FiberWelding</Link></li>
-              <li><Link to="/pricelist">PriceList</Link></li>
-              <li><Link to="/about">About</Link></li>
-              <li><Link to="/contacts">Contacts</Link></li>
-             </ul>
-          <a href="#" data-target="nav-mobile" className="sidenav-trigger">
-            <i className="material-icons">menu</i>
-          </a>
-        </div>
-      </nav>
+        }
+        id="mobile-nav"
+        menuIcon={<Icon>menu</Icon>}
+        options={{
+          draggable: true,
+          edge: "left",
+          inDuration: 250,
+          onCloseEnd: null,
+          onCloseStart: null,
+          onOpenEnd: null,
+          onOpenStart: null,
+          outDuration: 200,
+          preventScrolling: true,
+        }}
+      >
+        <Link to="/main">Main</Link>
+        <Link to="/structuredcabling">Structured Cabling</Link>
+        <Link to="/somemeasurement">Some Measurement</Link>
+        <Link to="/fiberwelding">FiberWelding</Link>
+        <Link to="/pricelist">PriceList</Link>
+        <Link to="/about">About</Link>
+        <Link to="/contacts">Contacts</Link>
+      </Navbar>
     </>
   );
 };
 
-export default Navbar;
+export default NavBar;

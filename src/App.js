@@ -1,8 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
+import NavBar from "./components/NavBar";
+import FooTer from "./components/FooTer";
 import Main from './pages/Main'
 import StructuredCabling from './pages/StructuredCabling'
 import SomeMeasurement from './pages/SomeMeasurement'
@@ -17,7 +17,7 @@ import "materialize-css";
 const App = () => {
   return (
     <Router>
-      <Navbar />
+      <NavBar />
       <Routes>
         <Route path="/main" element={<Main />} />
         <Route path="/structuredcabling" element={<StructuredCabling />} />
@@ -27,7 +27,7 @@ const App = () => {
         <Route path="/about" element={<About />} />
         <Route path="/contacts" element={<Contacts />} />
       </Routes>
-      <Footer />
+      <FooTer />
     </Router>
   );
 };
