@@ -1,13 +1,15 @@
 {
   "files": {
-    "main.css": "/CW_site/static/css/main.723bb078.css",
-    "main.js": "/CW_site/static/js/main.aa8b4e40.js",
+    "main.css": "/CW_site/static/css/main.312170e5.css",
+    "main.js": "/CW_site/static/js/main.af67f0db.js",
+    "static/media/IETiger_logo.png": "/CW_site/static/media/IETiger_logo.44c47d00b84b1336e8e9.png",
+    "static/media/logoCW.png": "/CW_site/static/media/logoCW.41d6f4714113f3953f01.png",
     "index.html": "/CW_site/index.html",
-    "main.723bb078.css.map": "/CW_site/static/css/main.723bb078.css.map",
-    "main.aa8b4e40.js.map": "/CW_site/static/js/main.aa8b4e40.js.map"
+    "main.312170e5.css.map": "/CW_site/static/css/main.312170e5.css.map",
+    "main.af67f0db.js.map": "/CW_site/static/js/main.af67f0db.js.map"
   },
   "entrypoints": [
-    "static/css/main.723bb078.css",
-    "static/js/main.aa8b4e40.js"
+    "static/css/main.312170e5.css",
+    "static/js/main.af67f0db.js"
   ]
 }
