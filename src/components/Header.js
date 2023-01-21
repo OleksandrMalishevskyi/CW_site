@@ -1,10 +1,11 @@
-import React from "react";
+import logo from '../logoCW.png'
 import { Link } from "react-router-dom";
 
-import "materialize-css";
+
+
 import { Navbar, Icon } from "react-materialize";
 
-const NavBar = () => {
+const Header = () => {
   return (
     <>
       <Navbar
@@ -12,7 +13,7 @@ const NavBar = () => {
         alignLinks="right"
         brand={
           <Link to="/main" className="brand-logo">
-            Logo
+            <img src={logo} width={70} height={70} alt="logo" />
           </Link>
         }
         id="mobile-nav"
@@ -41,4 +42,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Header;

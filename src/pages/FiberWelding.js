@@ -1,8 +1,11 @@
-import React from 'react'
+
 
 const FiberWelding = () => {
   return (
-    <div>FiberWelding</div>
+    <div className='flex flex-col items-center justifi-center min-h-screen py-2'>
+werh #ffff00 yellow accent-2
+niz #43a047 green darken-1
+    </div>
   )
 }
 

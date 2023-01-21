@@ -1,10 +1,14 @@
-import React from 'react'
+import logo from "../logoCW.png";
+import logo2 from "../IETiger_logo.png";
 
 const Main = () => {
   return (
-<img className="materialboxed" src="images/fiber-optics-and-telecommunications-featured.jpg" />
+    <>
+      <img src={logo} width={700} height={700} alt="logo" />
+      // what a fuck?
+      <img src={logo2} width={20} height={20} alt="logo" />
+    </>
+  );
+};
 
-  )
-}
-
-export default Main
+export default Main;
