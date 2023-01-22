@@ -29,6 +29,7 @@ const App = () => {
               <Route path="/pricelist" element={<PriceList />} />
               <Route path="/about" element={<About />} />
               <Route path="/contacts" element={<Contacts />} />
+              <Route path="/" element={<Main />} />
             </Routes>
             </div>
         <FooTer className="foter"/>
