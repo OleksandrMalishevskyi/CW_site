@@ -3,8 +3,8 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./components/Header";
 import FooTer from "./components/FooTer";
 import Main from "./pages/Main";
-import StructuredCabling from "./pages/StructuredCabling";
-import SomeMeasurement from "./pages/SomeMeasurement";
+import OurServices from "./pages/OurServices";
+import NetworkMeasurement from "./pages/NetworkMeasurement";
 import FiberWelding from "./pages/FiberWelding";
 import PriceList from "./pages/PriceList";
 import About from "./pages/About";
@@ -20,14 +20,11 @@ const App = () => {
         <div className="mainwrap">
             <Routes>
               <Route path="/main" element={<Main />} />
-              <Route
-                path="/structuredcabling"
-                element={<StructuredCabling />}
-              />
-              <Route path="/somemeasurement" element={<SomeMeasurement />} />
+              <Route path="/about" element={<About />} />
+              <Route path="/ourservices" element={<OurServices />} />
+              <Route path="/networkmeasurement" element={<NetworkMeasurement />} />
               <Route path="/fiberwelding" element={<FiberWelding />} />
               <Route path="/pricelist" element={<PriceList />} />
-              <Route path="/about" element={<About />} />
               <Route path="/contacts" element={<Contacts />} />
               <Route path="/" element={<Main />} />
             </Routes>

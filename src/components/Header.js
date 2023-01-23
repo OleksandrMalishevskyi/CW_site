@@ -1,5 +1,5 @@
 import logo from '../logoCW.png'
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 
 
@@ -12,9 +12,9 @@ const Header = () => {
         className="light-blue lighten-1"
         alignLinks="right"
         brand={
-          <Link to="/main" className="brand-logo">
+          <NavLink to="/main" className="brand-logo">
             <img src={logo} width={70} height={70} alt="logo" />
-          </Link>
+          </NavLink>
         }
         id="mobile-nav"
         menuIcon={<Icon>menu</Icon>}
@@ -30,13 +30,13 @@ const Header = () => {
           preventScrolling: true,
         }}
       >
-        <Link to="/main">Main</Link>
-        <Link to="/structuredcabling">Structured Cabling</Link>
-        <Link to="/somemeasurement">Some Measurement</Link>
-        <Link to="/fiberwelding">FiberWelding</Link>
-        <Link to="/pricelist">PriceList</Link>
-        <Link to="/about">About</Link>
-        <Link to="/contacts">Contacts</Link>
+        <NavLink to="/main">MAIN</NavLink>
+        <NavLink to="/about">ABOUT</NavLink>
+        <NavLink to="/ourservices">OUR SERVICES</NavLink>
+        <NavLink to="/networkmeasurement">NETWORK MEASUREMENTS</NavLink>
+        <NavLink to="/fiberwelding">FiberWelding</NavLink>
+        <NavLink to="/pricelist">PriceList</NavLink>
+                <NavLink to="/contacts">CONTACTS</NavLink>
       </Navbar>
     </>
   );

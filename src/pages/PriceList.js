@@ -5,7 +5,7 @@ const PriceList = () => {
     <div>
     <h2>Cennik</h2>
     
-    <span>Podstawowy cennik pomiarów sieci LAN:
+    <p>Podstawowy cennik pomiarów sieci LAN:
     Pomiar sieci LAN Kat 5e (klasa D) - 7 zł netto/tor
     Pomiar sieci LAN Kat6/6A (klasa E/EA) - 9 zł netto/tor
     Pomiar sieci LAN Kat7 (klasa F/FA) - 20 zł netto/tor
@@ -33,7 +33,7 @@ const PriceList = () => {
     / powyższe ceny dotyczą kabli zakończonych w przełącznicach światłowodowych /
     
     Przedstawiona oferta cenowa ma charakter informacyjny, nie stanowi oferty handlowej w rozumieniu Art.66 par.1 Kodeksu Cywilnego.
-    </span>
+    </p>
     </div>
   )
 }
