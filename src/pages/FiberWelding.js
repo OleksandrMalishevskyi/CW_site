@@ -9,48 +9,41 @@ const FiberWelding = () => {
 
   const text1Style = useAnimation(text1Ref);
   const text2Style = useAnimation(text2Ref);
-  const text3Style = useAnimation(text3Ref);
 
   const imgStyle = useSpring({
-    to: {
-      opacity: 1
-    },
     from: {
-      opacity: 0
+      opacity: 0,
+      scale: 1.5,
     },
-    ref: imgRef
-  })
+    to: {
+      opacity: 1,
+      scale: 1,
+    },
+    ref: imgRef,
+  });
 
   useChain([text1Ref, text2Ref, text3Ref, imgRef]);
 
   return (
-    <div>
-      <animated.h1 style={text1Style}>Welcome</animated.h1>
-      <animated.h1 style={text2Style}>To</animated.h1>
-      <animated.h1 style={text3Style}>The</animated.h1>
-      <animated.img src="images/FOT.jpg" height={200} alt="" style={imgStyle} />
+    <div className="presentation">
+      <animated.img style={imgStyle} src="/logoCW.png" alt="" />
+      <animated.h1 style={text1Style}>CW Krzysztof Kijewski</animated.h1>
+      <animated.h1 style={text2Style}>Pomiary Sieciowe</animated.h1>
     </div>
   );
-}
+};
 
 const useAnimation = (ref) => {
   const spring = useSpring({
     from: {
       opacity: 0,
-      position: "absolute",
-      transform: "scale(0.2)"
+      scale: 1.2,
     },
-    to: [
-    {
+    to: {
       opacity: 1,
-      transform: "scale(2.0)"
+      scale: 1,
     },
-    {
-      opacity:0,
-      transform: "scale(0.5)"
-    
-    }
-  ],
+
     ref: ref,
   });
   return spring;

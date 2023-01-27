@@ -1,32 +1,35 @@
+
 import "materialize-css";
-import { Carousel } from "react-materialize";
+import { Parallax } from "react-materialize";
 
 const About = () => {
   return (
-    <>
-      <Carousel
-        carouselId="Carousel-83"
-        images={[
-          "https://picsum.photos/300/400?image=0",
-          "https://picsum.photos/200/300?image=1",
-          "https://picsum.photos/200/300?image=2",
-          "https://picsum.photos/200/300?image=3",
-          "https://picsum.photos/200/300?image=4",
-        ]}
-        options={{
-          dist: -100,
-          duration: 200,
-          fullWidth: false,
-          indicators: false,
-          noWrap: false,
-          numVisible: 5,
-          onCycleTo: null,
-          padding: 0,
-          shift: 0,
-        }}
-      />
-    </>
-  );
-};
 
-export default About;
+    <div>
+    <Parallax
+      image={<img alt="" src="http://materializecss.com/images/parallax1.jpg"/>}
+      options={{
+        responsiveThreshold: 0
+      }}
+    />
+    <div className="section white">
+      <div className="row container">
+        <h2 className="header">
+          Parallax
+        </h2>
+        <p className="grey-text text-darken-3 lighten-3">
+          Parallax is an effect where the background content or image in this case, is moved at a different speed than the foreground content while scrolling.
+        </p>
+      </div>
+    </div>
+    <Parallax
+      image={<img alt="" src="http://materializecss.com/images/parallax2.jpg"/>}
+      options={{
+        responsiveThreshold: 0
+      }}
+    />
+  </div>
+  )
+}
+
+export default About

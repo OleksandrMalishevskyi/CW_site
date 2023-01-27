@@ -8,12 +8,13 @@ import { Navbar, Icon } from "react-materialize";
 const Header = () => {
   return (
     <>
-      <Navbar
+      <Navbar 
+      
         className="light-blue lighten-1"
         alignLinks="right"
         brand={
           <NavLink to="/main" className="brand-logo">
-            <img src={logo} width={70} height={70} alt="logo" />
+            <img src={logo} width={65} height={65} alt="logo" />
           </NavLink>
         }
         id="mobile-nav"
